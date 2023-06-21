@@ -24,4 +24,10 @@ div {
   margin: auto;
   width: 75%;
 }
+
+@media screen and (max-width: 600px) {
+  div {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

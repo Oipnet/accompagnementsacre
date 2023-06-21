@@ -37,7 +37,12 @@
       >
     </div>
     <figure>
-      <nuxt-img src="/images/karen.webp" alt="Karen" loading="lazy" />
+      <nuxt-img
+        src="/images/karen.webp"
+        alt="Karen"
+        loading="lazy"
+        class="figure-image"
+      />
     </figure>
   </section>
 </template>
@@ -96,5 +101,26 @@ img {
 .more:hover {
   background-color: #ab7260;
   color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  figure {
+    width: 100%;
+  }
+
+  .figure-image {
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 </style>
