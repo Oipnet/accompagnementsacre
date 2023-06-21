@@ -61,4 +61,20 @@ h1 {
 p {
   white-space: pre-line;
 }
+
+@media screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .service {
+    grid-template-columns: 1fr;
+  }
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    margin: auto;
+  }
+}
 </style>
