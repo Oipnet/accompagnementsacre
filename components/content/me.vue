@@ -57,14 +57,12 @@ defineProps({
 </script>
 <style scoped>
 section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 400px;
 }
 
 .presentation {
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -74,13 +72,13 @@ h1 {
 }
 
 p {
-  width: 50%;
+  max-width: 300px;
   margin: auto;
   margin-bottom: 1.2rem;
 }
 
 figure {
-  width: 50%;
+  width: 400px;
 }
 
 img {
@@ -103,8 +101,9 @@ img {
   color: #fff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   section {
+    display: flex;
     flex-direction: column-reverse;
     margin-top: 0;
     padding: 0;
@@ -116,8 +115,12 @@ img {
 
   .figure-image {
     width: 100%;
+    height: auto;
   }
 
+  .presentation {
+    padding-top: 1rem;
+  }
   p {
     width: 100%;
     padding: 1rem;
