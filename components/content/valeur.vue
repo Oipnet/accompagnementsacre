@@ -201,4 +201,27 @@ figure.espoir img {
   width: 400px;
   height: 530px;
 }
+
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid div {
+    padding: 0;
+  }
+  figure {
+    width: 100%;
+  }
+  figure img{
+    width: 100%;
+    height: auto;
+  }
+
+  .bienveillance {
+    grid-row-start: 4;
+  }
+  .harmonie {
+    grid-row-start: 8;
+  }
+}
 </style>

@@ -116,12 +116,14 @@ img {
   .figure-image {
     width: 100%;
     height: auto;
+    border-radius: none;
   }
 
   .presentation {
     padding-top: 1rem;
   }
   p {
+    max-width: none;
     width: 100%;
     padding: 1rem;
   }

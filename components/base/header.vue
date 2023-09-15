@@ -39,4 +39,15 @@ nav a {
 nav a:hover {
   font-weight: bold;
 }
+
+@media screen and (max-width: 800px) {
+  header {
+    padding: 0 0.5rem;
+    margin-bottom: 0;
+  }
+
+  nav {
+    display: none;
+  }
+}
 </style>
